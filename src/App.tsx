@@ -1,9 +1,15 @@
-import "./App.css";
+import Todos from "./components/Todos";
+import Todo from "./models/todo";
 
 function App() {
+  const todos = [
+    new Todo("Learn React"),
+    new Todo("Learn Redux"),
+    new Todo("Learn Node.js"),
+  ];
   return (
     <div>
-      <h1>My First React App</h1>
+      <Todos items={todos} />
     </div>
   );
 }
